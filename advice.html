@@ -1,0 +1,174 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advice generator web app</title>
+    <style>
+        body {
+            /* background-color: #03031f; */
+        background-image: url(quote\ image.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+        .heading{
+            /* background-color: red; */
+            color: whitesmoke;
+            font-size: larger;
+            width: 300px;
+            height: 30px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+        }
+        .card {
+            gap: 30px;
+            width: 500px;
+            height: 250px;
+            padding: 30px;
+            display: grid;
+            text-align: center;
+            position: relative;
+            border-radius: 20px;
+            margin: 150px auto 0;
+            justify-content: center;
+            border: 3px solid #03031f;
+            background-color: rgb(30, 7, 71);
+            box-shadow: 5px 5px 6px  5px rgb(26, 99, 33);
+        }
+
+        .card>div {
+            color: #3fff3f;
+            font-weight: bold;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+
+        .card>q {
+            height: 90px;
+            color: white;
+            font-size: 20px;
+            line-height: 1.3;
+            overflow-y: auto;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+           .card > q::-webkit-scrollbar{
+            width: 10px;
+            border-radius: 10px;
+            background-color:#03031f;
+        }
+
+        .card > q::-webkit-scrollbar-thumb{
+            border-radius: 10px;
+            background-color: rgb(101, 224, 101);
+        }
+
+        .line {
+            display: block;
+            margin: 0 auto 30px;
+        }
+
+        .dice {
+            left: 47%;
+            padding: 10px;
+            bottom: -25px;
+            border-radius: 20%;
+            position: absolute;
+            background-color: #3fff3f;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="heading">
+    <h3>ADVICE GENERATOR WEB APP</h3>
+    </div>
+     <div class="card">
+        <div>Advice <span>1</span></div>
+
+        <q>Learn as if you were to live forever</q>
+
+        <img class="line" src="./advice-divider.png" alt="">
+        <img class="dice" src="logo1.jpg" alt="">
+    </div>
+
+      <script>
+        let advice, next_btn, advice_num, advice_bank
+
+        advice = document.querySelector("q")
+        next_btn = document.querySelector(".dice")
+        advice_num = document.querySelector("span")
+        advice_bank = [
+
+
+          "Learn as if you were to live forever",
+            "You must be the change you wish to see in the world.",
+            "Education is the most powerful weapon which you can use to change the world.",
+            "The future belongs to those who believe in the beauty of their dreams.",
+            "The mind is not a vessel to be filled but a fire to be ignited.",
+            "Don't let what you cannot do interfere with what you can do.",
+            "A person who never made a mistake never tried anything new.",
+            "Try not to become a man of success. Rather become a man of value.",
+            "Excellence is not a skill. It is an attitude.",
+            "Go into the world and do well. But more importantly, go into the world and do good. Jur",
+            "Rule no.1 is: Don't sweat the small stuff. Rule no. 2 is: It's all small stuff.",
+             "Quality is not an act, it is a habit.",
+              "I think it's possible for ordinary people to choose to be extraordinary.",
+              "The best way to predict your future is to create it.",
+              "The future belongs to those who believe in the beauty of their dreams. Roosevelt",
+              "Just believe in yourself. Even if you don't pretend that you do and, at some point, you will.",
+               "Do the best you can until you know better. Then when you know better, do better.",
+               "Doubt kills more dreams than failure ever will.",
+                "You are braver than you believe, stronger than you seem and smarter than you think..A Milne",
+                "Go confidently in the direction of your dreams. Live the life you have imagined. Thoreau",
+                "Learn from yesterday. Live for today. Hope for tomorrow. Einstein",
+                 "The more that you read, the more things you will know, the more that you learn, the more places you'll ",
+                 "Today a reader. Tomorrow a leader.",
+             "In a world where you can be anything, be kind."
+            ]
+
+
+              // change advice randomly upon click event
+        next_btn.addEventListener("click", () => {
+            // generate a random number
+            let index = Math.trunc(Math.random() * advice_bank.length)
+
+            advice.textContent = advice_bank[index]
+
+            advice_num.textContent = index + 1
+        })
+
+          //* auto display advice randomly
+        // setInterval(() => {
+        //     // generate a random number
+        //     let index = Math.trunc(Math.random() * advice_bank.length)
+
+        //     advice.textContent = advice_bank[index]
+
+        //     advice_num.textContent = index + 1
+        // }, 1000);
+
+            //* auto display advice in serial manner
+        let ordered = 0
+        setInterval(() => {
+
+            if (ordered < (advice_bank.length - 1)){
+                
+                advice.textContent = advice_bank[ordered]
+                
+                advice_num.textContent = ordered + 1
+                ordered++
+            }
+            else{
+                     ordered = 0
+            }
+        }, 500);
+
+
+    </script> 
+
+</body>
+</html>

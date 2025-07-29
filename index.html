@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,11 +7,12 @@
     <style>
         body {
             /* background-color: #03031f; */
-        background-image: url(quote\ image.webp);
-        background-repeat: no-repeat;
-        background-size: cover;
+            background-image: url(quote\ image.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
         }
-        .heading{
+
+        .heading {
             /* background-color: red; */
             color: whitesmoke;
             font-size: larger;
@@ -21,6 +23,7 @@
             margin-right: auto;
             margin-top: 40px;
         }
+
         .card {
             gap: 30px;
             width: 500px;
@@ -34,7 +37,7 @@
             justify-content: center;
             border: 3px solid #03031f;
             background-color: rgb(30, 7, 71);
-            box-shadow: 5px 5px 6px  5px rgb(26, 99, 33);
+            box-shadow: 5px 5px 6px 5px rgb(26, 99, 33);
         }
 
         .card>div {
@@ -54,13 +57,13 @@
             margin-bottom: 40px;
         }
 
-           .card > q::-webkit-scrollbar{
+        .card>q::-webkit-scrollbar {
             width: 10px;
             border-radius: 10px;
-            background-color:#03031f;
+            background-color: #03031f;
         }
 
-        .card > q::-webkit-scrollbar-thumb{
+        .card>q::-webkit-scrollbar-thumb {
             border-radius: 10px;
             background-color: rgb(101, 224, 101);
         }
@@ -78,15 +81,14 @@
             position: absolute;
             background-color: #3fff3f;
         }
-        
-        
     </style>
 </head>
+
 <body>
     <div class="heading">
-    <h3>ADVICE GENERATOR WEB APP</h3>
+        <h3>ADVICE GENERATOR WEB APP</h3>
     </div>
-     <div class="card">
+    <div class="card">
         <div>Advice <span>1</span></div>
 
         <q>Learn as if you were to live forever</q>
@@ -95,7 +97,7 @@
         <img class="dice" src="logo1.jpg" alt="">
     </div>
 
-      <script>
+    <script>
         let advice, next_btn, advice_num, advice_bank
 
         advice = document.querySelector("q")
@@ -104,7 +106,7 @@
         advice_bank = [
 
 
-          "Learn as if you were to live forever",
+            "Learn as if you were to live forever",
             "You must be the change you wish to see in the world.",
             "Education is the most powerful weapon which you can use to change the world.",
             "The future belongs to those who believe in the beauty of their dreams.",
@@ -115,23 +117,124 @@
             "Excellence is not a skill. It is an attitude.",
             "Go into the world and do well. But more importantly, go into the world and do good. Jur",
             "Rule no.1 is: Don't sweat the small stuff. Rule no. 2 is: It's all small stuff.",
-             "Quality is not an act, it is a habit.",
-              "I think it's possible for ordinary people to choose to be extraordinary.",
-              "The best way to predict your future is to create it.",
-              "The future belongs to those who believe in the beauty of their dreams. Roosevelt",
-              "Just believe in yourself. Even if you don't pretend that you do and, at some point, you will.",
-               "Do the best you can until you know better. Then when you know better, do better.",
-               "Doubt kills more dreams than failure ever will.",
-                "You are braver than you believe, stronger than you seem and smarter than you think..A Milne",
-                "Go confidently in the direction of your dreams. Live the life you have imagined. Thoreau",
-                "Learn from yesterday. Live for today. Hope for tomorrow. Einstein",
-                 "The more that you read, the more things you will know, the more that you learn, the more places you'll ",
-                 "Today a reader. Tomorrow a leader.",
-             "In a world where you can be anything, be kind."
-            ]
+            "Quality is not an act, it is a habit.",
+            "I think it's possible for ordinary people to choose to be extraordinary.",
+            "The best way to predict your future is to create it.",
+            "The future belongs to those who believe in the beauty of their dreams. Roosevelt",
+            "Just believe in yourself. Even if you don't pretend that you do and, at some point, you will.",
+            "Do the best you can until you know better. Then when you know better, do better.",
+            "Doubt kills more dreams than failure ever will.",
+            "You are braver than you believe, stronger than you seem and smarter than you think..A Milne",
+            "Go confidently in the direction of your dreams. Live the life you have imagined. Thoreau",
+            "Learn from yesterday. Live for today. Hope for tomorrow. Einstein",
+            "The more that you read, the more things you will know, the more that you learn, the more places you'll ",
+            "Today a reader. Tomorrow a leader.",
+            "In a world where you can be anything, be kind.",
+            " Success usually comes to those who are too busy to be looking for it.",
+            "Shoot for the moon. Even if you miss, you’ll land among the stars.",
+            "Don’t stop when you’re tired. Stop when you’re done.",
+            "If you can’t fly, then run, if you can’t run then walk, if you can’t walk then crawl, but whatever you do, you have to keep moving forward.",
+            "Success usually comes to those who are too busy to be looking for it.",
+            "Success is walking from failure to failure with no loss of enthusiasm.",
+            "Whenever you see a successful person, you only see the public glories, never the private sacrifices to reach them.",
+            "Try not to become a person of success, but rather try to become a person of value.",
+            "It is not the strongest of the species that survive, nor the most intelligent, but the one most responsive to change.",
+            "Great minds discuss ideas; average minds discuss events; small minds discuss people.",
+            "No one can make you feel inferior without your consent.",
+            "The distance between insanity and genius is measured only by success.",
+            "Don’t be afraid to give up the good to go for the great.",
+            "If you can’t explain it simply, you don’t understand it well enough.",
+            "There are two types of people who will tell you that you cannot make a difference in this world",
+            "those who are afraid to try and those who are afraid you will succeed.",
+            "Success is the sum of small efforts, repeated day in and day out.",
+            "Courage is resistance to fear, mastery of fear — not absence of fear.",
+            "Only put off until tomorrow what you are willing to die having left undone.",
+            "Twenty years from now, you will be more disappointed by the things that you didn’t do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbor. Catch the trade winds in your sails. Explore. Dream. Discover.",
+            "The successful warrior is the average man, with laserlike focus.",
+            "Successful people do what unsuccessful people are not willing to do. Don’t wish it were easier; wish you were better.",
+            "The No. 1 reason people fail in life is because they listen to their friends, family, and neighbors.",
+            "You may have to fight a battle more than once to win it.",
+            "Many of life’s failures are people who did not realize how close they were to success when they gave up.",
+            "What would you attempt to do if you knew you would not fail?",
+            "Always bear in mind that your own resolution to success is more important than any other one thing.",
+            "Successful and unsuccessful people do not vary greatly in their abilities. They vary in their desires to reach their potential.",
+            "I’ve learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.",
+            "Much of the stress that people feel doesn’t come from having too much to do. It comes from not finishing what they’ve started.",
+            "Focus on the journey, not the destination. Joy is found not in finishing an activity but in doing it.",
+            "You never regret being kind.",
+            "Success at the highest level comes down to one question: Can you decide that your happiness can come from someone else’s success?",
+            "Do what you have always done and you’ll get what you have always got.",
+            "Think of what you have rather than of what you lack. Of the things you have, select the best and then reflect how eagerly you would have sought them if you did not have them.",
+            "Happiness is where we find it, but very rarely where we seek it.",
+            "To be content means that you realize you contain what you seek.",
+            "Expecting life to treat you well because you are a good person is like expecting an angry bull not to charge because you are a vegetarian.",
+            "View your life from your funeral: Looking back at your life experiences, what have you accomplished? What would you have wanted to accomplish but didn’t? What were the happy moments? What were the sad? What would you do again, and what wouldn’t you do?",
+            "Boredom is the feeling that everything is a waste of time…serenity, that nothing is.",
+            "To handle yourself, use your head; to handle others, use your heart.",
+            "The mediocre teacher tells. The good teacher explains. The superior teacher demonstrates. The great teacher inspires.",
+            "Keep your fears to yourself, but share your courage with others.",
+            "The greatest leader is not necessarily the one who does the greatest things. He is the one that gets people to do the greatest things.",
+            "Power isn’t control at all-power is strength, and giving that strength to others. A leader isn’t someone who forces others to make him stronger; a leader is someone willing to give his strength to others that they may have the strength to stand on their own.",
+            "Don’t tell people how to do things; tell them what to do and let them surprise you with their results.",
+            "Leadership is the art of getting someone else to do something you want done because he wants to do it.",
+            "Victory has a hundred fathers and defeat is an orphan.",
+            "Management is doing things right; leadership is doing the right things.",
+            "Example is not the main thing in influencing others. It is the only thing.",
+            "Leaders must be close enough to relate to others, but far enough ahead to motivate them.",
+            "The mark of a great man is one who knows when to set aside the important things in order to accomplish the vital ones.",
+            "Leadership is not about titles, positions, or flowcharts. It is about one life influencing another.",
+            "You have to be burning with an idea, or a problem, or a wrong that you want to right. If you’re not passionate enough from the start, you’ll never stick it out.",
+            "A leader … is like a shepherd. He stays behind the flock, letting the most nimble go out ahead, whereupon the others follow, not realizing that all along they are being directed from behind.",
+            "Being responsible sometimes means pissing people off.",
+            "Do you know that one of the great problems of our age is that we are governed by people who care more about feelings than they do about thoughts and ideas.",
+            "A leader is a dealer in hope.",
+            "The best executive is the one who has sense enough to pick good men to do what he wants done, and self-restraint to keep from meddling with them while they do it.",
+            "If you would convince a man that he does wrong, do right. But do not care to convince him. Men will believe what they see. Let them see.",
+            "I cannot trust a man to control others who cannot control himself.",
+            "Consensus: the process of abandoning all beliefs, principles, values, and policies in search of something in which no one believes, but to which no one objects; the process of avoiding the very issues that have to be solved, merely because you cannot get agreement on the way ahead. What great cause would have been fought and won under the banner: ‘I stand for consensus?",
+            "A leader takes people where they want to go. A great leader takes people where they don’t necessarily want to go but ought to be.",
+            "There is a difference between being a leader and being a boss. Both are based on authority. A boss demands blind obedience; a leader earns his authority through understanding and trust.",
+            "You get in life what you have the courage to ask for.",
+            "In the end, it is important to remember that we cannot become what we need to be by remaining what we are.",
+            "A leader isn’t someone who forces others to make him stronger; a leader is someone willing to give his strength to others so that they may have the strength to stand on their own.",
+            "Always remember, Son, the best boss is the one who bosses the least. Whether it’s cattle, or horses, or men, the least government is the best government.",
+            "If you really want the key to success, start by doing the opposite of what everyone else is doing.",
+            "Give as few orders as possible,” his father had told him once long ago. “Once you’ve given orders on a subject, you must always give orders on that subject.",
+            "The art of leadership is saying no, not yes. It is very easy to say yes.",
+            "Wisdom equals knowledge plus courage. You have to not only know what to do and when to do it, but you have to also be brave enough to follow through.",
+            "In a battle between two ideas, the best one doesn’t necessarily win. No, the idea that wins is the one with the most fearless heretic behind it.",
+            "If you want to build a ship, don’t drum up the men to gather wood, divide the work, and give orders. Instead, teach them to yearn for the vast and endless sea.",
+            "Remember, teamwork begins by building trust. And the only way to do that is to overcome our need for invulnerability.",
+            "Leadership is an action, not a position.",
+            "Surround yourself with great people; delegate authority; get out of the way.",
+            "I cannot give you a formula for success, but I can give you the formula for failure, which is: Try to please everybody.",
+            "Show me the man you honor and I will know what kind of man you are.",
+            "A man always has two reasons for doing anything: a good reason and the real reason.",
+            "If you spend your life trying to be good at everything, you will never be great at anything.",
+            "Average leaders raise the bar on themselves; good leaders raise the bar for others; great leaders inspire others to raise their own bar.",
+            "Don’t blow off another’s candle for it won’t make yours shine brighter.",
+            "Whenever you see a successful business, someone once made a courageous decision.",
+            "When you put together deep knowledge about a subject that intensely matters to you, charisma happens. You gain courage to share your passion, and when you do that, folks follow.",
+            "People buy into the leader before they buy into the vision.",
+            "A good leader is a person who takes a little more than his share of the blame and a little less than his share of the credit.",
+            "A good plan violently executed now is better than a perfect plan executed next week.",
+            "Feeling gratitude and not expressing it is like wrapping a present and not giving it.",
+            "Silent gratitude isn’t very much to anyone.",
+            "The only people with whom you should try to get even are those who have helped you.",
+            "Keep your eyes open and try to catch people in your company doing something right, then praise them for it.",
+            "You wouldn’t worry so much about what others think of you if you realized how seldom they do.",
+            "Low self-confidence isn’t a life sentence. Self-confidence can be learned, practiced, and mastered-just like any other skill. Once you master it, everything in your life will change for the better.",
+            "Shyness has a strange element of narcissism, a belief that how we look, how we perform, is truly important to other people.",
+            "Do it or not. There is no try.",
+            "Rarely have I seen a situation where doing less than the other guy is a good strategy.",
+            "You may have to fight a battle more than once to win it.",
+            "The best revenge is massive success.",
+            "The question isn’t who is going to let me; it’s who is going to stop me.",
+            "The only way to do great work is to love what you do.",
+        ]
 
 
-              // change advice randomly upon click event
+        // change advice randomly upon click event
         next_btn.addEventListener("click", () => {
             // generate a random number
             let index = Math.trunc(Math.random() * advice_bank.length)
@@ -141,7 +244,7 @@
             advice_num.textContent = index + 1
         })
 
-          //* auto display advice randomly
+        //* auto display advice randomly
         // setInterval(() => {
         //     // generate a random number
         //     let index = Math.trunc(Math.random() * advice_bank.length)
@@ -151,24 +254,25 @@
         //     advice_num.textContent = index + 1
         // }, 1000);
 
-            //* auto display advice in serial manner
+        //* auto display advice in serial manner
         let ordered = 0
         setInterval(() => {
 
-            if (ordered < (advice_bank.length - 1)){
-                
+            if (ordered < (advice_bank.length - 1)) {
+
                 advice.textContent = advice_bank[ordered]
-                
+
                 advice_num.textContent = ordered + 1
                 ordered++
             }
-            else{
-                     ordered = 0
+            else {
+                ordered = 0
             }
-        }, 5000);
+        }, 500);
 
 
-    </script> 
+    </script>
 
 </body>
+
 </html>

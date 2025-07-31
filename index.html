@@ -91,20 +91,25 @@
             height: 20px;
         }
 
-        .share {
+        .share-icon {
             
-            
-            /* margin-left: 300px;
-            margin-top: 20px; */
-            background-color: rgb(6, 56, 6);
+            width: 30px ;
+            height: 30px;
+            margin-left: 300px;
+            margin-top: 20px;
+            /* background-color: rgb(6, 56, 6); */
             border-radius: 20px;
-            color: yellow;
+            /* color: yellow;
             font-size: x-small;
-            font-style: italic;
+            font-style: italic; */
             position:absolute;
             top: 20px;
             right: 40px;
 
+        }
+        
+        .socials{
+            
         }
     </style>
 </head>
@@ -124,14 +129,21 @@
 
     </div>
     <!-- <button class="share"> SHARE</button> -->
-    <select class="share" name="" id="">
-        <option value="">SHARE TO SOCIAL MEDIA</option>
-        <option value="">SHARE TO FACEBOOK</option>
-        <option value="">SHARE TO INSTAGRAM</option>
-        <option value="">SHARE TO TIKTOK</option>
-        <option value="">SHARE TO WHATSAPP</option>
-        <option value="">SHARE TO SNAPCHAT</option>
-    </select>
+   <details>
+        <summary class="share">
+            <img class="share-icon" src="share icon 1.jpg" alt=""></summary>
+        <ul class="socials">
+            <li><a href="">twitter</a></li>
+            <li><a href="">facebook</a></li>
+            <li><a href=""></a>TIKTOK</li>
+            <li><a href=""></a>INSTAGRAM</li>
+            <li><a href="">WHATSAPP</a></li>
+            <li><a href="">SNAPCHAT</a></li>
+            
+
+        </ul>
+    </details>
+
 
     <script>
         let author, adviceText, authorName, advice_num, advice_bank

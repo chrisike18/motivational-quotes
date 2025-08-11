@@ -45,7 +45,7 @@
         }
 
         .card>div {
-            color: #e4e3ec;
+            color: darkgoldenrod;
             font-weight: bold;
             letter-spacing: 5px;
             text-transform: uppercase;
@@ -108,12 +108,106 @@
 
         }
         
-        .socials{
-
-        }
+      
         .share-icon{
              width: 30px ;
             height: 30px;
+        }
+
+       /* media section (tablet) */
+        @media screen and (width >= 767px) and ( width < 1023px) {
+            
+            .card {
+
+
+            gap: 20px;
+            width: 250px;
+            height: 250px;
+            padding: 50px;
+            display: grid;
+            text-align: center;
+            position: relative;
+            border-radius: 20px;
+            margin: 70px auto 0;
+            justify-content: center;
+            border: 3px solid #03031f;
+            background-color: rgb(30, 7, 71);
+            box-shadow: 5px 5px 6px 5px rgb(26, 99, 33);
+            background-image: url(border\ 311.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+
+        }
+        
+        }
+
+        /* media section (mobile) */
+         /* mobile screen section */
+        @media screen and (width < 768px) {
+            body{
+                padding: 40px;
+            }
+       
+            .card {
+                width: 250px;
+                height: 270px;
+            
+                 gap: 30px;
+          
+            padding: 40px;
+            display: grid;
+            text-align: center;
+            position: relative;
+            border-radius: 20px;
+            margin: 70px auto 0;
+            justify-content: center;
+            border: 3px solid #03031f;
+            background-color: rgb(30, 7, 71);
+            box-shadow: 5px 5px 6px 5px rgb(26, 99, 33);
+            background-image: url(border\ 311.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+           
+                
+            }
+    .heading {
+            /* background-color: red; */
+            color: whitesmoke;
+            font-size: small;
+            width: 100px;
+            height: 20px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+
+
+
+
+        /* .share {
+
+
+                margin-left: 150px;
+                margin-top: 600px;
+                
+
+              
+
+                bottom: 0px;
+                left: 60px;
+
+            } */
+
+
+
+        /* .share-icon {
+                width: 20px;
+                height: 20px;
+                margin-bottom: 40px;
+            } */
+            
         }
     </style>
 </head>
